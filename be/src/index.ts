@@ -1,5 +1,6 @@
-import Anthropic from "@anthropic-ai/sdk";
 require("dotenv").config();
+import Anthropic from "@anthropic-ai/sdk";
+console.log(process.env.ANTHROPIC_API_KEY);
 
 
 const anthropic = new Anthropic()
