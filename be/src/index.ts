@@ -10,7 +10,10 @@ async function main() {
         model:"claude-3-5-haiku-20241022",
         max_tokens:1000,
         temperature:0,
-        messages:[]
+        messages:[{
+            role:'user',
+            content:'give me 2+2' 
+        }]
     })
     console.log(msg);
 }
